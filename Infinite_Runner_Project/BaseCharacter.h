@@ -3,17 +3,18 @@
 
 class BaseCharacter
 {
+public:
+    BaseCharacter(Texture2D texture, Rectangle rect, Vector2 position);
+    ~BaseCharacter();
+
 private:
 
-public:
-    BaseCharacter();
-    ~BaseCharacter();
+    Texture2D texture;
+    Rectangle rect;
+    Vector2 position;
+
+    int frame;
+    float runningTime;
+    float updateTime;
+
 };
-
-BaseCharacter::BaseCharacter()
-{
-}
-
-BaseCharacter::~BaseCharacter()
-{
-}
